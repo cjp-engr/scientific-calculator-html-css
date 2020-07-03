@@ -1,0 +1,648 @@
+*{
+	margin : 0;
+}
+
+body{
+	font-family : "Century Gothic";
+	
+}
+
+button{
+	cursor : pointer;
+}
+
+.calc_body{
+	width : 850px;
+	height : 600px;
+	margin : 30px auto;
+	display : block;
+	padding : 35px;
+	box-sizing : border-box;
+	background-color : black;
+	border-radius : 20px;
+}
+
+.display{
+	width : 65%;
+	height : 30%;
+	float : left;
+	box-sizing : border-box;
+}
+
+textarea{
+	width : 100%;
+	height : 100%;
+	border-radius : 5px;
+}
+
+.button_arrow{
+	width : 30%;
+	height : 30%;
+	float : right;
+	box-sizing : border-box;
+	position : relative;
+}
+
+.first_row:after{
+	content : "";
+	display : table;
+	clear : both;
+}
+
+.button_func{
+	height : 70%;
+	width : 100%;
+	
+	margin-top : 20px;
+	margin-left : auto;
+	margin-right : auto;
+	display : block;
+	position : relative;
+	box-sizing : border-box;
+}
+
+.button_num{
+	width : 50%;
+	height : 60%;
+	
+	box-sizing : border-box;
+	position : absolute;
+	top : 0;
+	left : 0;
+}
+
+.num{
+	position : relative;
+	
+}
+
+.button_op{
+	height : 30%;
+	width : 50%;
+	margin-top : 20px;
+	
+	box-sizing : border-box;
+	position : absolute;
+	bottom : 0;
+	left : 0;
+}
+
+.operation{
+	position : relative;
+}
+
+.more_op{
+	height : 100%;
+	width : 50%;
+	
+	position : absolute;
+	top : 0%;
+	left : 50%;
+	box-sizing : border-box;
+}
+
+.more_operation{
+	position : relative;
+	height : 100%;
+}
+
+
+.seven{
+	position : absolute;
+	top : 0;
+	left : 0;
+	
+	height : calc(100%/4);
+	width : calc(100%/3);
+}
+
+.eight{
+	position : absolute;
+	top : 0;
+	left : calc(100%/3);
+	
+	height : calc(100%/4);
+	width : calc(100%/3);
+	
+}
+
+.nine{
+	position : absolute;
+	top : 0;
+	left : calc(2*(100%/3));
+	
+	height : calc(100%/4);
+	width : calc(100%/3);
+	
+}
+
+.four{
+	position : absolute;
+	top : calc(100%/4);
+	left : 0;
+	
+	height : calc(100%/4);
+	width : calc(100%/3);
+}
+
+.five{
+	position : absolute;
+	top : calc(100%/4);
+	left : calc(100%/3);
+	
+	height : calc(100%/4);
+	width : calc(100%/3);
+	
+}
+
+.six{
+	position : absolute;
+	top : calc(100%/4);
+	left : calc(2*(100%/3));
+	
+	height : calc(100%/4);
+	width : calc(100%/3);
+	
+}
+
+.one{
+	position : absolute;
+	top : calc(2*(100%/4));
+	left : 0;
+	
+	height : calc(100%/4);
+	width : calc(100%/3);
+}
+
+.two{
+	position : absolute;
+	top : calc(2*(100%/4));
+	left : calc(100%/3);
+	
+	height : calc(100%/4);
+	width : calc(100%/3);
+	
+}
+
+.three{
+	position : absolute;
+	top : calc(2*(100%/4));
+	left : calc(2*(100%/3));
+	
+	height : calc(100%/4);
+	width : calc(100%/3);
+	
+}
+
+.zero{
+	position : absolute;
+	top : calc(3*(100%/4));
+	left : 0;
+	
+	height : calc(100%/4);
+	width : calc(100%/3);
+}
+
+.decimal{
+	position : absolute;
+	top : calc(3*(100%/4));
+	left : calc(100%/3);
+	
+	height : calc(100%/4);
+	width : calc(100%/3);
+	
+}
+
+.exp{
+	position : absolute;
+	top : calc(3*(100%/4));
+	left : calc(2*(100%/3));
+	
+	height : calc(100%/4);
+	width : calc(100%/3);
+	
+}
+
+.delete{
+	position : absolute;
+	top : 0;
+	left : 0;
+	
+	height : calc(100%/2);
+	width : calc(100%/4);
+}
+
+.multiply{
+	position : absolute;
+	top : 0;
+	left : calc(100%/4);
+	
+	height : calc(100%/2);
+	width : calc(100%/4);
+}
+.addition{
+	position : absolute;
+	top : 0;
+	left : calc(2*(100%/4));
+	
+	height : calc(100%/2);
+	width : calc(100%/4);
+	
+}
+.answer{
+	position : absolute;
+	top : 0;
+	left : calc(3*(100%/4));
+	
+	height : calc(100%/2);
+	width : calc(100%/4);
+}
+
+.ca{
+	position : absolute;
+	top : calc(100%/2);
+	left : 0;
+	
+	height : calc(100%/2);
+	width : calc(100%/4);
+}
+
+.divide{
+	position : absolute;
+	top : calc(100%/2);
+	left : calc(100%/4);
+	
+	height : calc(100%/2);
+	width : calc(100%/4);
+}
+.minus{
+	position : absolute;
+	top : calc(100%/2);
+	left : calc(2*(100%/4));
+	
+	height : calc(100%/2);
+	width : calc(100%/4);
+	
+}
+.equal{
+	position : absolute;
+	top : calc(100%/2);
+	left : calc(3*(100%/4));
+	
+	height : calc(100%/2);
+	width : calc(100%/4);
+}
+
+.blankshift{
+	position : absolute;
+	top : 0;
+	left : 0;
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.blankalpha{
+	position : absolute;
+	top : 0;
+	left : calc(100%/4);
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.mode{
+	position : absolute;
+	top : 0;
+	left : calc(2*(100%/4));
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.on{
+	position : absolute;
+	top : 0;
+	left : calc(3*(100%/4));
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.blankapps{
+	position : absolute;
+	top : calc(100%/7);
+	left : 0;
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.convt{
+	position : absolute;
+	top : calc(100%/7);
+	left : calc(100%/4);
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.calc{
+	position : absolute;
+	top : calc(100%/7);
+	left : calc(2*(100%/4));
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.inv{
+	position : absolute;
+	top : calc(100%/7);
+	left : calc(3*(100%/4));
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.integral{
+	position : absolute;
+	top : calc(2*(100%/7));
+	left : 0;
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.eng{
+	position : absolute;
+	top : calc(2*(100%/7));
+	left : calc(100%/4);
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.frac{
+	position : absolute;
+	top : calc(2*(100%/7));
+	left : calc(2*(100%/4));
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.sqrt{
+	position : absolute;
+	top : calc(2*(100%/7));
+	left : calc(3*(100%/4));
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.exponent{
+	position : absolute;
+	top : calc(3*(100%/7));
+	left : 0;
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.square{
+	position : absolute;
+	top : calc(3*(100%/7));
+	left : calc(100%/4);
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.log{
+	position : absolute;
+	top : calc(3*(100%/7));
+	left : calc(2*(100%/4));
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.ln{
+	position : absolute;
+	top : calc(3*(100%/7));
+	left : calc(3*(100%/4));
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.neg{
+	position : absolute;
+	top : calc(4*(100%/7));
+	left : 0;
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.deg{
+	position : absolute;
+	top : calc(4*(100%/7));
+	left : calc(100%/4);
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.hyp{
+	position : absolute;
+	top : calc(4*(100%/7));
+	left : calc(2*(100%/4));
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.sin{
+	position : absolute;
+	top : calc(4*(100%/7));
+	left : calc(3*(100%/4));
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.cos{
+	position : absolute;
+	top : calc(5*(100%/7));
+	left : 0;
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.tan{
+	position : absolute;
+	top : calc(5*(100%/7));
+	left : calc(100%/4);
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.rcl{
+	position : absolute;
+	top : calc(5*(100%/7));
+	left : calc(2*(100%/4));
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.abs{
+	position : absolute;
+	top : calc(5*(100%/7));
+	left : calc(3*(100%/4));
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.openparenthesis{
+	position : absolute;
+	top : calc(6*(100%/7));
+	left : 0;
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.closeparenthesis{
+	position : absolute;
+	top : calc(6*(100%/7));
+	left : calc(100%/4);
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.fd{
+	position : absolute;
+	top : calc(6*(100%/7));
+	left : calc(2*(100%/4));
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.mplus{
+	position : absolute;
+	top : calc(6*(100%/7));
+	left : calc(3*(100%/4));
+	
+	height : calc(100%/7);
+	width : calc(100%/4);
+}
+
+.up{
+	position : absolute;
+	height : calc(100%/3);
+	width : calc(100%/3);
+	top : 0;
+	left : calc(100%/3);
+	
+	
+}
+
+.left{
+	position : absolute;
+	height : calc(100%/3);
+	width : calc(100%/3);
+	top : calc(100%/3);
+	left : 0;
+	
+	
+}
+
+.right{
+	position : absolute;
+	height : calc(100%/3);
+	width : calc(100%/3);
+	top : calc(100%/3);
+	left : calc(2*(100%/3));
+	
+	
+}
+
+.down{
+	position : absolute;
+	height : calc(100%/3);
+	width : calc(100%/3);
+	top : calc(2*(100%/3));
+	left : calc(100%/3);
+	
+	
+}
+
+.button_alignment{
+	margin-left : auto;
+	margin-right : auto;
+	display : block;
+	height: 28px;
+	width : 70px;
+	font-size : 0.9em;
+	border-radius : 5px;
+	
+}
+
+.button_alignment_arrow{
+	margin-left : auto;
+	margin-right : auto;
+	display : block;
+	height: 50px;
+	width : 50px;
+	font-size : 3em;
+	border-radius : 40%;
+	
+}
+
+button{
+	font-family : "Century Gothic";
+	font-weight : bold;
+}
+
+.a_label{
+	font-family : "Century Gothic";
+	font-weight : bold;
+	font-size : 0.75em;
+	color : #dbac50;
+}
+
+.a_label_blue{
+	color : #2569a1;
+}
+
+.a_label_green{
+	color : #d2dd49;
+}
+
+.numbers button{
+	background-color : #09568d;
+	color : white;
+}
+
+.operations button{
+	background-color : #e4cf93;
+	color : #74542f;
+}
+
+.more_operations button{
+	background-color : #f8a300;
+	color : white;
+}
+
+.button_arrows button{
+	background-color : #a65341;
+}
+
